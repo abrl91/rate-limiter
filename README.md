@@ -1,29 +1,17 @@
-# TypeScript Node.js Starter
+# Rate Limiter
+A rate limiter is a tool that controls the rate of requests or operations performed by a user, service, or API within a specific time window.
 
-A minimal TypeScript starter for Node.js applications with modern defaults and zero configuration.
+### Common Use Cases
+1.	API Protection: Prevent abuse and DoS attacks
+2.	Resource Management: Ensure fair usage of system resources
+3.	Cost Control: Limit usage to stay within service quotas
+4.	Service Stability: Prevent system overload
 
-## Features
+### Common Algorithms
+1. Fixed Window
+2. Sliding Window
+3. Token Bucket
 
-- 🚀 Instant TypeScript execution with `tsx`
-- 📦 ESM (ECMAScript Modules) support
-- 🔥 Hot reload during development
-- ⚡️ Minimal configuration
-- 🛠️ Modern Node.js features out of the box
-- 📝 Type checking and source maps included
-
-## Quick Start
-
-```bash
-# Clone the repository
-git clone git@github.com:abrl91/node-ts-starter.git
-
-# Install dependencies
-npm install
-
-# Start development server with hot reload
-npm run dev
-
-# Run production build
-npm run build
-npm start
-
+### Configuration Parameters
+- Rate limit should be configurable
+- Different rate limits for different users/plan/endpoints
